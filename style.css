@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  
+  background: white;
+  /* padding: 20px; */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.bo {
+  text-align: center;
+  padding: 0rem 1rem;
+}
+
+.po {
+  text-align: center;
+  padding: 0rem 1rem;
+}
+
+.card h2 {
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 0px;
+  padding-left: 5px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+
+.btn-group button.green {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-group button.red {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 15px auto 0;
+  display: block;
+  border: 2px solid #007bff;
+}
+
+#output {
+  padding: 20px;
+  text-align: center;
+}
+
+.ot,
+#history {
+  /* background-color: #dc3545; */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* #history{
+  display: flex;
+  justify-content: center;
+} */
+
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

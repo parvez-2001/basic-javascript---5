@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SBI Bank App</title>
+  <link rel="shortcut icon" href="./assests/SBI-logo.svg.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <main class="main-container">
+    <!-- Sign Up Form -->
+    <section class="card">
+      <div class="bo">
+        <h2>Sign Up</h2>
+        <input type="text" id="signupName" placeholder="Name" />
+        <input type="number" id="signupAge" placeholder="Age" />
+        <input type="password" id="signupPin1" placeholder="PIN (4 digits)" maxlength="4" />
+        <input type="password" id="signupPin2" placeholder="Confirm PIN" maxlength="4" />
+        <button onclick="signup()">Create Account</button>
+      </div>
+    </section>
+
+    <!-- Banking Operations -->
+    <section class="card">
+      <div class="po">
+        <h2>Bank Account</h2>
+        <input type="text" id="accountNumber" placeholder="Account Number" />
+        <input type="password" id="authPin" placeholder="PIN" />
+        <button onclick="checkBalance()">Authenticate</button>
+
+        <!-- Check Balance Button -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <button class="btn btn-primary btn-sm" onclick="showCurrentBalance()">Check Balance</button>
+        </div>
+
+        <!-- Balance Display -->
+        <input type="text" class="form-control mb-3" id="balance" placeholder="Balance will appear here" readonly />
+
+        <input type="number" id="amount" placeholder="Amount" />
+        <div class="btn-group">
+          <button class="green" onclick="tnsn(0)">Credit</button>
+          <button class="red" onclick="tnsn(1)">Debit</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="output" class="ot mt-4"></div>
+  <div id="history"></div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
